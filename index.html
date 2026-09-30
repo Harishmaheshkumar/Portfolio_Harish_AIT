@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Harish Maheshkumar — AI Engineer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#f3f5f2;--ink:#5e6d66;--mute:#55655c;--line:#cdd6cf;--accent:#000000;--card:#080808;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0e0d;--ink:#e6efe9;--mute:#93a69b;--line:#26382f;--accent:#6fcaa4;--card:#16261e}}
+:root[data-theme="dark"]{--bg:#0f1a15;--ink:#e6efe9;--mute:#93a69b;--line:#000000;--accent:#6fcaa4;--card:#16261e}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+main{max-width:860px;margin:0 auto;padding:56px 24px 80px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;margin:0;line-height:1.15}
+h1{font-size:clamp(2.6rem,9vw,5rem);letter-spacing:-.02em}
+h2{font-size:1.7rem;margin-bottom:20px}
+h3{font-size:1.2rem}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.lead{font-size:1.25rem;max-width:36em;margin:20px 0 24px}
+.contact{list-style:none;padding:0;margin:0;overflow-wrap:anywhere}
+.contact li{margin:0 0 4px;max-width:none;font-weight:500}
+section{margin-top:64px;padding-top:28px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:150px 1fr;gap:8px 28px;margin-bottom:28px}
+.when{color:var(--mute);font-size:.92rem}
+@media(max-width:620px){.row{grid-template-columns:1fr}}
+ul{padding-left:20px;margin:10px 0 0}
+li{margin-bottom:6px;max-width:62ch}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}
+.tags span{background:var(--card);border:1px solid var(--line);border-radius:4px;padding:2px 10px;font-size:.85rem}
+.proj{background:var(--card);border-left:4px solid var(--accent);padding:20px 22px;margin-bottom:22px}
+.skills dt{font-weight:500;margin-top:14px}
+.skills dd{margin:2px 0 0;color:var(--mute)}
+.hero{display:flex;align-items:center;justify-content:space-between;gap:32px;animation:in .7s ease both}
+.photo{width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid var(--accent);flex-shrink:0}
+@media(max-width:620px){
+  .hero{flex-direction:column-reverse;align-items:flex-start}
+  .photo{width:130px;height:130px}
+}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.hero{animation:none}}
+footer{margin-top:72px;color:var(--mute);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+<div>
+<h1>Harish Maheshkumar</h1>
+<p class="lead">AI engineer building RAG systems, knowledge-graph chatbots and multi-agent tools that turn a plain question into a working answer.</p>
+<ul class="contact">
+<li><a href="mailto:harish.maheshkumar47@gmail.com">harish.maheshkumar47@gmail.com</a></li>
+<li><a href="tel:+918667432312">+91 86674 32312</a></li>
+<li><a href="https://www.linkedin.com/in/harish-maheshkumar/" target="_blank" rel="noopener">linkedin.com/in/harish-maheshkumar</a></li>
+<li><a href="https://github.com/Harishmaheshkumar" target="_blank" rel="noopener">github.com/Harishmaheshkumar</a></li>
+<li>Coimbatore 641047</li>
+</ul>
+</div>
+<img class="photo" src="profile.jpeg" alt="Photo of Harish M">
+</header>
+
+<section>
+<h2>About Me</h2>
+<p>Integrated M.Tech student in Artificial Intelligence at VIT Bhopal (2021 - 2026), with hands-on experience building RAG pipelines, GraphRAG chatbots on Neo4j, agentic AI workflows and multi-agent systems. I have built fintech chatbots with role-based access control and mentored 30+ undergraduates in Python and machine learning. I'm looking for AI engineering roles where I can build and ship LLM-powered applications.</p>
+</section>
+
+<section>
+<h2>Projects</h2>
+<article class="proj">
+<h3>Multi-Agent AI Code Generator</h3>
+<div class="tags"><span>Python</span><span>LangChain</span><span>Groq API</span></div>
+<p>Three agents (Planner, Architect and Coder) pass work down a pipeline that turns a plain-text request into a plan, a design and a complete React + Vite web app.</p>
+<ul>
+<li>A file-writing tool saves the generated code as a runnable project from a single prompt.</li>
+<li>Separate modules for the LLM client, each agent and the tools, so a Reviewer or Tester agent can be added easily.</li>
+</ul>
+</article>
+<article class="proj">
+<h3>Fintech Finsolve RAG Chatbot</h3>
+<div class="tags"><span>Python</span><span>FastAPI</span><span>LangChain</span><span>RAG</span><span>RBAC</span><span>Groq</span></div>
+<p>A fintech application that answers questions from financial documents, with users seeing only what their role allows.</p>
+<ul>
+<li>Modular design covering authentication, role-based access control, data models and the RAG pipeline.</li>
+<li>Context-aware responses grounded in retrieved financial information.</li>
+</ul>
+</article>
+</section>
+
+<section>
+<h2>Experience</h2>
+<div class="row">
+<div class="when">Sep 2026</div>
+<div><h3>AI Engineer Intern, AI Tech Academy</h3>
+<ul>
+<li>Built RAG pipelines and compared retrieval architectures for document question answering.</li>
+<li>Built an agentic chatbot with LLM agents and tool-calling for multi-step queries.</li>
+<li>Built a GraphRAG chatbot on Neo4j, combining entity-relationship extraction with graph retrieval.</li>
+<li>Built a fintech RAG chatbot with role-specific retrieval and department-level permissions.</li>
+</ul></div>
+</div>
+<div class="row">
+<div class="when">Oct 2025 – Jun 2026</div>
+<div><h3>Academic Technical Mentor, MIT ADT University (Kalvium)</h3>
+<ul>
+<li>Mentored 30+ undergraduates in Python, machine learning and full ML projects, from preprocessing to deployment with Scikit-learn and Pandas.</li>
+<li>Designed sessions, assignments and assessments for Kalvium's industry-focused curriculum.</li>
+<li>Gave 1:1 guidance to track progress and connect classroom concepts to real-world ML.</li>
+</ul></div>
+</div>
+</section>
+
+<section>
+<h2>Skills</h2>
+<dl class="skills">
+<dt>Languages</dt><dd>Python, C, C++, JavaScript, HTML, CSS, SQL</dd>
+<dt>Libraries and frameworks</dt><dd>PyTorch, Scikit-learn, LangChain, Hugging Face, NumPy, Pandas, Matplotlib, Seaborn</dd>
+<dt>Generative AI and NLP</dt><dd>RAG, GraphRAG, agentic AI, OCR (Tesseract), prompt engineering</dd>
+<dt>Tools</dt><dd>Jupyter, Google Colab, GitHub, VS Code, Antigravity</dd>
+</dl>
+</section>
+
+<section>
+<h2>Education</h2>
+<div class="row">
+<div class="when">2021 - 2026</div>
+<div><h3>Integrated M.Tech in Artificial Intelligence</h3>
+<p>Vellore Institute of Technology, Bhopal. GPA 7.86 / 10.</p></div>
+</div>
+<p class="when">Languages: English, Tamil, Telugu, Kannada, Hindi. Hobbies: Carrom, Volleyball.</p>
+</section>
+
+<footer>Harish Maheshkumar· Coimbatore 641047 · harish.maheshkumar47@gmail.com</footer>
+</main>
+</body>
+</html>
